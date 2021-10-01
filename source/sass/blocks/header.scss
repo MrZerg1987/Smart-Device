@@ -1,0 +1,53 @@
+.header {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1411px;
+  margin: 0 auto;
+
+  font-style: normal;
+  font-family: $font-family--roboto-condensed;
+
+  grid-template-columns: min-content 1fr min-content;
+  // color: $color-white;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  width: 202px;
+}
+
+.header__logo {
+  margin-right: 16px;
+}
+
+.header__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__slogan-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.header__slogan-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-grey;
+}
+
+.header__feedback {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  padding: 14px;
+
+  border: 1px solid $color-white;
+  border-radius: 5px;
+}

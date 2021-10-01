@@ -6,6 +6,15 @@
 // Global
 //---------------------------------
 
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/utils.scss";
+@import "global/container.scss";
+@import "global/page-body.scss";
+@import "global/reboot.scss";
 
 // Blocks
 //---------------------------------
+
+@import "blocks/header";
+@import "blocks/contacts";
