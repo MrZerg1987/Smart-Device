@@ -444,9 +444,8 @@ template {
 .page-body {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: start;
-  align-content: start;
   min-height: 100%;
+  font-style: normal;
   -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
   -ms-grid-rows: min-content 1fr min-content;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
@@ -487,16 +486,11 @@ img {
 .header {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 1411px;
+  max-width: 1631px;
   margin: 0 auto;
-  font-style: normal;
+  padding: 0 110px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
   -ms-grid-columns: -webkit-min-content 1fr -webkit-min-content;
   -ms-grid-columns: min-content 1fr min-content;
   grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
@@ -507,11 +501,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 202px;
+  width: 204px;
+  margin-right: 100px;
 }
 
 .header__logo {
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
 .header__slogan {
@@ -525,10 +520,13 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-top: 3px;
+  padding-left: 2px;
 }
 
 .header__slogan-title {
   margin: 0;
+  margin-bottom: 2px;
   font-weight: 700;
   font-size: 25px;
   line-height: 29px;
@@ -538,6 +536,7 @@ img {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #788891;
 }
 
@@ -549,9 +548,25 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   width: 180px;
+  margin-top: 3px;
+  margin-bottom: 2px;
   padding: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   border: 1px solid #ffffff;
   border-radius: 5px;
+}
+
+.header__feedback:hover {
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+}
+
+.header__feedback:active {
+  opacity: 0.7;
 }
 
 .contacts {
@@ -561,25 +576,158 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "PT Mono", "Courier", monospace;
+  justify-self: flex-end;
 }
 
 .contacts__list {
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  margin: 0;
+  margin-right: 38px;
+  padding: 0;
+  list-style: none;
+  grid-column-gap: 65px;
+  grid-row-gap: 30px;
+  -ms-grid-columns: (-webkit-max-content)[2];
+  -ms-grid-columns: (max-content)[2];
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 231px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 12px;
+}
+
+.contacts__link:hover {
+  color: #00b2ff;
+}
+
+.contacts__link:active {
+  opacity: 0.7;
+}
+
+.contacts__mail svg {
+  margin-right: 20px;
+}
+
+.contacts__phone svg {
+  margin-right: 16px;
+}
+
+.contacts__span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro {
   width: 100%;
+  padding-top: 33px;
+  background-color: #1b2d37;
+  background-image: url("../../img/content/intro-background-desktop-@1x.png"), url("../../img/svg/intro-block.svg");
+  background-size: cover;
+}
+
+.main-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1631px;
+  margin: 0 auto;
+  padding: 173px 0 108px 105px;
+  color: #ffffff;
+}
+
+.main-screen__info-block {
+  margin-right: 71px;
+  padding-top: 58px;
+}
+
+.main-screen__title {
+  max-width: 718px;
   margin: 0;
-  padding: 0;
-  list-style: none;
-  -ms-grid-columns: (-webkit-max-content)[3];
-  -ms-grid-columns: (max-content)[3];
-  grid-template-columns: repeat(3, -webkit-max-content);
-  grid-template-columns: repeat(3, max-content);
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.main-screen__description {
+  position: relative;
+  max-width: 623px;
+  margin: 0;
+  margin-bottom: 43px;
+  margin-left: 98px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  font-family: "PT Mono", "Courier", monospace;
+}
+
+.main-screen__description::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -94px;
+  width: 66px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.main-screen__picture {
+  width: 705px;
+  height: 515px;
+  margin-right: 33px;
+}
+
+.main-screen__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 407px;
+  margin-left: 98px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #00b2ff;
+  border-radius: 5px;
+}
+
+.main-screen__link:hover {
+  background-color: rgba(0, 178, 255, 0.7);
 }
 
 @media (max-width: 1023px) {
@@ -587,11 +735,63 @@ img {
     min-width: 768px;
     padding: 0 25px;
   }
+
+  .header__feedback {
+    display: none;
+  }
+
+  .contacts__list {
+    margin-top: -3px;
+    margin-right: 0;
+    grid-column-gap: 9px;
+  }
+
+  .contacts__mail svg {
+    width: 26px;
+    height: 19px;
+    margin-right: 0;
+  }
+
+  .contacts__phone {
+    padding-right: 0;
+  }
+
+  .contacts__phone svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .contacts__span {
+    display: none;
+  }
+
+  .intro {
+    padding-top: 20px;
+  }
+
+  .main-screen {
+    position: relative;
+  }
+
+  .main-screen__picture {
+    position: absolute;
+    top: 41px;
+    right: -240px;
+    width: 465px;
+    height: 340px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     min-width: 320px;
     padding: 0 15px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/content/intro-background-desktop-@2x.png"), url("../../img/svg/intro-block.svg");
   }
 }

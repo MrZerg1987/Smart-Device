@@ -42,7 +42,7 @@
 
   <body class="page-body">
     <div class="intro">
-      <header class="header">
+      <header class="header container">
         <h1 class="visually-hidden">
           Компания Smart Device - электронные комплектующие для ваших девайсов
         </h1>
@@ -59,26 +59,26 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <a
-                class="contacts__mail"
+                class="contacts__link contacts__mail"
                 href="mailto:info@sd.ru"
                 aria-label="Открыть электронную почту"
               >
                 <svg width="19" height="14">
                   <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
                 </svg>
-                <span>info@sd.ru</span>
+                <span class="contacts__span">info@sd.ru</span>
               </a>
             </li>
             <li class="contacts__item">
               <a
-                class="contacts__phone"
+                class="contacts__link contacts__phone"
                 href="tel:+74950005252"
                 aria-label="Позвонить в компанию Smart Device"
               >
                 <svg width="18" height="18">
                   <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                 </svg>
-                <span>+7 (495) 000 52 52</span>
+                <span class="contacts__span">+7 (495) 000 52 52</span>
               </a>
             </li>
           </ul>
@@ -88,34 +88,41 @@
         </a>
       </header>
       <section class="main-screen">
-        <h2 class="main-screen__title">Печатные платы</h2>
-        <p class="main-screen__description">
-          производство и монтаж, поставка комплектующих, блоков и модулей
-        </p>
-        <picture>
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              img/content/main-picture-mobile-@1x.png 1x,
-              img/content/main-picture-mobile-@2x.png 2x
-            " />
-          <source
-            media="(max-width: 1023px)"
-            srcset="
-              img/content/main-picture-tablet-@1x.png 1x,
-              img/content/main-picture-tablet-@2x.png 2x
-            " />
-          <!-- 1х: 705px; 2x: 1410px -->
-          <img
-            src="img/content/main-picture-desktop-@1x.png"
-            srcset="
-              img/content/main-picture-desktop-@1x.png 1x,
-              img/content/main-picture-desktop-@2x.png 2x
-            "
-            alt="Фотография печатной платы"
-            width="705"
-            height="515"
-        /></picture>
+        <div class="main-screen__info-block">
+          <h2 class="main-screen__title">Печатные платы</h2>
+          <p class="main-screen__description">
+            производство и монтаж, поставка комплектующих, блоков и модулей
+          </p>
+          <a class="main-screen__link" href="#"
+            >Получить бесплатную консультацию</a
+          >
+        </div>
+        <div class="main-screen__picture">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                img/content/main-picture-mobile-@1x.png 1x,
+                img/content/main-picture-mobile-@2x.png 2x
+              " />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                img/content/main-picture-tablet-@1x.png 1x,
+                img/content/main-picture-tablet-@2x.png 2x
+              " />
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img
+              src="img/content/main-picture-desktop-@1x.png"
+              srcset="
+                img/content/main-picture-desktop-@1x.png 1x,
+                img/content/main-picture-desktop-@2x.png 2x
+              "
+              alt="Фотография печатной платы"
+              width="705"
+              height="515"
+          /></picture>
+        </div>
       </section>
     </div>
     <main class="main-content">main</main>

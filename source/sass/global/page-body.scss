@@ -1,7 +1,8 @@
 .page-body {
   display: grid;
-  align-content: start;
   min-height: 100%;
+
+  font-style: normal;
 
   grid-template-rows: min-content 1fr min-content;
 }

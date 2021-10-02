@@ -1,0 +1,18 @@
+.intro {
+  width: 100%;
+  padding-top: 33px;
+
+  background-color: $color-dark-blue;
+  background-image: url("../../img/content/intro-background-desktop-@1x.png"),
+    url("../../img/svg/intro-block.svg");
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/content/intro-background-desktop-@2x.png"),
+      url("../../img/svg/intro-block.svg");
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
