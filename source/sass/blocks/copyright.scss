@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  padding: 14px 253px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: $font-family--pt-mono;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  opacity: 0.5;
+}
+
+.copyright__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-column-gap: 142px;
+  grid-template-columns: repeat(4, max-content);
+}
+
+.copyright__item {
+  display: flex;
+  align-items: center;
+}

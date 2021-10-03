@@ -1,0 +1,40 @@
+.address {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  color: $color-dark-blue;
+}
+
+.address__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 15px;
+  line-height: 16px;
+  font-family: $font-family--roboto-condensed;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: $font-family--pt-mono;
+
+  opacity: 0.5;
+}
+
+.address__link {
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

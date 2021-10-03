@@ -1,0 +1,69 @@
+.brief {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $font-family--roboto-condensed;
+}
+
+.brief__logo-wrapper {
+  display: flex;
+  width: 204px;
+  margin-bottom: 53px;
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+  }
+}
+
+.brief__logo {
+  margin-right: 14px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
+
+  img {
+    @media (max-width: $mobile-width) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.brief__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3px;
+  padding-left: 2px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.brief__slogan-title {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $color-special-black;
+}
+
+.brief__slogan-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $font-family--roboto;
+  color: $color-grey;
+}
+
+.brief__work-experience {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+  }
+}

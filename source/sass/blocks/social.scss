@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+}
+
+.social-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-column-gap: 16px;
+  grid-template-columns: repeat(3, min-content);
+}
+
+.social__link {
+  display: flex;
+  width: 28px;
+
+  color: $color-special-grey;
+
+  :hover {
+    color: $color-blue;
+  }
+}

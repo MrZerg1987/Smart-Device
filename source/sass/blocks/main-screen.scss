@@ -8,12 +8,28 @@
 
   @media (max-width: $tablet-width) {
     position: relative;
+
+    padding: 117px 88px 163px;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    padding: 231px 16px 70px;
   }
 }
 
 .main-screen__info-block {
   margin-right: 71px;
   padding-top: 58px;
+
+  @media (max-width: $tablet-width) {
+    z-index: 1;
+
+    width: 100%;
+    margin-right: 0;
+    padding-top: 0;
+  }
 }
 
 .main-screen__title {
@@ -27,6 +43,22 @@
   font-family: $font-family--roboto-condensed;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+
+  @media (max-width: $tablet-width) {
+    max-width: 75%;
+
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 500px;
+    margin: 0 auto 27px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .main-screen__description {
@@ -52,6 +84,36 @@
     height: 2px;
 
     background-color: $color-white;
+
+    @media (max-width: $tablet-width) {
+      left: -48px;
+
+      width: 33px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 15px;
+      left: 1px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 75%;
+    margin-bottom: 56px;
+    margin-left: 51px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 51px;
+
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 
@@ -63,10 +125,17 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 41px;
-    right: -240px;
+    right: -207px;
 
     width: 465px;
-    height: 340px;
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 37px;
+    right: 0;
+
+    width: 295px;
   }
 }
 
@@ -89,5 +158,38 @@
 
   &:hover {
     background-color: rgba($color-blue, 0.7);
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 378px;
+    margin-left: 52px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-screen__link-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 18px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: $font-family--roboto-condensed;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: $color-blue;
+    border-radius: 5px;
+
+    justify-items: center;
   }
 }

@@ -3,16 +3,30 @@
   padding-top: 33px;
 
   background-color: $color-dark-blue;
-  background-image: url("../../img/content/intro-background-desktop-@1x.png"),
-    url("../../img/svg/intro-block.svg");
+  background-image: url("../img/content/intro-background-desktop-@1x.png");
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/content/intro-background-desktop-@2x.png"),
-      url("../../img/svg/intro-block.svg");
+    background-image: url("../img/content/intro-background-desktop-@2x.png");
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
+
+    background-image: url("../img/content/intro-background-tablet-@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/intro-background-tablet-@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 17px;
+
+    background-image: url("../img/content/intro-background-mobile-@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/intro-background-mobile-@2x.png");
+    }
   }
 }
