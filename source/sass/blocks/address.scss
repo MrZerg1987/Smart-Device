@@ -1,6 +1,7 @@
 .address {
   display: flex;
   flex-direction: column;
+  max-width: 333px;
 
   font-weight: 400;
   color: $color-dark-blue;
@@ -8,7 +9,7 @@
 
 .address__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 
   font-size: 15px;
   line-height: 16px;

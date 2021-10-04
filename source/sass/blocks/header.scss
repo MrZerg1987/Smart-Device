@@ -1,8 +1,9 @@
 .header {
   display: grid;
-  max-width: 1631px;
+  width: 100%;
+  max-width: 1574px;
   margin: 0 auto;
-  padding: 0 110px;
+  padding: 0 80px;
 
   font-family: $font-family--roboto-condensed;
   color: $color-white;
@@ -21,11 +22,11 @@
 .header__logo-wrapper {
   display: flex;
   width: 204px;
-  margin-right: 100px;
+  margin-right: 50px;
 
   @media (max-width: $mobile-width) {
     width: 38px;
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -77,9 +78,10 @@
   display: flex;
   justify-content: center;
   width: 180px;
-  margin-top: 3px;
+  margin-top: 4px;
+  margin-right: 3px;
   margin-bottom: 2px;
-  padding: 14px;
+  padding: 13px;
 
   font-weight: 700;
   font-size: 14px;

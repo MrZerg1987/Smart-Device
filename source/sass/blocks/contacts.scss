@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 
   font-weight: 400;
   font-size: 16px;
@@ -11,17 +12,15 @@
 }
 
 .contacts__list {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+  max-width: 455px;
   margin: 0;
-  margin-right: 38px;
+  margin-right: 37px;
   padding: 0;
 
   list-style: none;
-
-  grid-column-gap: 65px;
-  grid-row-gap: 30px;
-  grid-template-columns: repeat(2, max-content);
 
   @media (max-width: $tablet-width) {
     margin-top: -3px;

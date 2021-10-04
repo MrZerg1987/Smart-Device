@@ -1,7 +1,7 @@
 .sections {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 456px;
 
   font-weight: 400;
   color: $color-dark-blue;
@@ -9,13 +9,18 @@
 
 .sections__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 
   font-size: 15px;
   line-height: 16px;
   font-family: $font-family--roboto-condensed;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.sections__list-wrapper {
+  display: flex;
+  margin-right: 30px;
 }
 
 .sections__list {
@@ -26,13 +31,12 @@
   font-size: 15px;
   line-height: 25px;
   font-family: $font-family--pt-mono;
-  columns: 2;
 
   opacity: 0.5;
 }
 
-.sections__item {
-  margin-right: 65px;
+.sections__first-list {
+  margin-right: 75px;
 }
 
 .sections__link {

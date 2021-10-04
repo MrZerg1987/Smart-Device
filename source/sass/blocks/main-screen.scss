@@ -1,14 +1,15 @@
 .main-screen {
+  position: relative;
+
   display: flex;
-  max-width: 1631px;
+  width: 100%;
+  max-width: 1574px;
   margin: 0 auto;
-  padding: 173px 0 108px 105px;
+  padding: 231px 80px 275px;
 
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    position: relative;
-
     padding: 117px 88px 163px;
     overflow-x: hidden;
   }
@@ -20,12 +21,11 @@
 }
 
 .main-screen__info-block {
-  margin-right: 71px;
-  padding-top: 58px;
+  z-index: 1;
+
+  margin-left: -3px;
 
   @media (max-width: $tablet-width) {
-    z-index: 1;
-
     width: 100%;
     margin-right: 0;
     padding-top: 0;
@@ -33,7 +33,7 @@
 }
 
 .main-screen__title {
-  max-width: 718px;
+  max-width: 721px;
   margin: 0;
   margin-bottom: 27px;
 
@@ -118,12 +118,14 @@
 }
 
 .main-screen__picture {
+  position: absolute;
+  top: 173px;
+  right: 4px;
+
   width: 705px;
   height: 515px;
-  margin-right: 33px;
 
   @media (max-width: $tablet-width) {
-    position: absolute;
     top: 41px;
     right: -207px;
 

@@ -4,13 +4,15 @@
 
 .social-list {
   display: grid;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  grid-column-gap: 16px;
-  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 13px;
+  grid-row-gap: 13px;
+  grid-template-columns: repeat(3, 28px);
 }
 
 .social__link {
@@ -21,5 +23,9 @@
 
   :hover {
     color: $color-blue;
+  }
+
+  :active {
+    opacity: 0.7;
   }
 }

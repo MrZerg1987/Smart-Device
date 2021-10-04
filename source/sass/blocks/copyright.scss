@@ -1,6 +1,11 @@
 .copyright {
   display: flex;
-  padding: 14px 253px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1574px;
+  margin: 0 auto;
+  padding: 0 80px;
 
   font-weight: 400;
   font-size: 13px;
@@ -14,17 +19,44 @@
 }
 
 .copyright__list {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
 
-  grid-column-gap: 142px;
-  grid-template-columns: repeat(4, max-content);
+.copyright__first-list {
+  max-width: 456px;
+}
+
+.copyright__second-list {
+  max-width: 820px;
 }
 
 .copyright__item {
   display: flex;
   align-items: center;
+}
+
+.copyright__description {
+  margin: 0;
+  padding: 14px 0;
+}
+
+.copyright__link {
+  display: flex;
+  padding: 14px 0;
+
+  text-align: center;
+
+  :hover {
+    color: $color-blue;
+  }
+
+  :active {
+    opacity: 0.7;
+  }
 }

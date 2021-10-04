@@ -7,7 +7,7 @@
 
 .brief__logo-wrapper {
   display: flex;
-  width: 204px;
+  width: 216px;
   margin-bottom: 53px;
 
   @media (max-width: $mobile-width) {
@@ -16,7 +16,7 @@
 }
 
 .brief__logo {
-  margin-right: 14px;
+  margin-right: 13px;
 
   @media (max-width: $mobile-width) {
     margin-right: 0;
@@ -36,10 +36,6 @@
   justify-content: center;
   padding-top: 3px;
   padding-left: 2px;
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
 }
 
 .brief__slogan-title {

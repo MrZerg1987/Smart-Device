@@ -8,7 +8,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 65px 253px 55px;
+  max-width: 1574px;
+  margin: 0 auto;
+  padding: 66px 80px 59px;
 
   border-bottom: 1px solid rgba($color-dark-grey, 0.2);
 }

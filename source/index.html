@@ -146,7 +146,7 @@
                 height="52"
             /></span>
             <div class="brief__slogan">
-              <h2 class="brief__slogan-title">Smart Device</h2>
+              <h2 class="brief__slogan-title">Service Device</h2>
               <span class="brief__slogan-description">умные технологии</span>
             </div>
           </div>
@@ -191,29 +191,35 @@
         </section>
         <section class="sections">
           <h2 class="sections__title">Разделы сайта</h2>
-          <ul class="sections__list">
-            <li class="sections__item">
-              <a class="sections__link" href="#">О компании</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Продукты</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Производство печатных плат</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Монтаж печатных плат</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Комплектующие</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Доставка</a>
-            </li>
-            <li class="sections__item">
-              <a class="sections__link" href="#">Контакты</a>
-            </li>
-          </ul>
+          <div class="sections__list-wrapper">
+            <ul class="sections__list sections__first-list">
+              <li class="sections__item">
+                <a class="sections__link" href="#">О компании</a>
+              </li>
+              <li class="sections__item">
+                <a class="sections__link" href="#">Продукты</a>
+              </li>
+              <li class="sections__item">
+                <a class="sections__link" href="#"
+                  >Производство печатных плат</a
+                >
+              </li>
+              <li class="sections__item">
+                <a class="sections__link" href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
+            <ul class="sections__list sections__second-list">
+              <li class="sections__item">
+                <a class="sections__link" href="#">Комплектующие</a>
+              </li>
+              <li class="sections__item">
+                <a class="sections__link" href="#">Доставка</a>
+              </li>
+              <li class="sections__item">
+                <a class="sections__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="address">
           <h2 class="address__title">Наш офис</h2>
@@ -246,23 +252,24 @@
           </ul>
         </section>
       </div>
-      <section class="copyright">
-        <h2 class="visually-hidden">Авторские права</h2>
-        <ul class="copyright__list">
+      <div class="copyright">
+        <ul class="copyright__list copyright__first-list">
           <li class="copyright__item">
-            <p>Все права защищены</p>
+            <p class="copyright__description">Все права защищены</p>
           </li>
           <li class="copyright__item">
-            <p>1999-2018 SD Service Devices</p>
-          </li>
-          <li class="copyright__item">
-            <a href="#">Условия конфиденциальности</a>
-          </li>
-          <li class="copyright__item">
-            <p>Developed by wow studio</p>
+            <p class="copyright__description">1999-2018 SD Service Devices</p>
           </li>
         </ul>
-      </section>
+        <ul class="copyright__list copyright__second-list">
+          <li class="copyright__item">
+            <a class="copyright__link" href="#">Условия конфиденциальности</a>
+          </li>
+          <li class="copyright__item">
+            <a class="copyright__link" href="#">Developed by wow studio</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
