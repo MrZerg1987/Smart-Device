@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
   max-width: 333px;
+  margin-right: 2px;
 
   font-weight: 400;
   color: $color-dark-blue;
+
+  justify-self: flex-end;
 }
 
 .address__title {
@@ -19,6 +22,7 @@
 }
 
 .address__list {
+  display: grid;
   margin: 0;
   padding: 0;
 
@@ -28,6 +32,8 @@
   font-family: $font-family--pt-mono;
 
   opacity: 0.5;
+
+  grid-template-columns: 1fr;
 }
 
 .address__link {

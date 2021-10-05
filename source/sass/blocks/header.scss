@@ -22,7 +22,7 @@
 .header__logo-wrapper {
   display: flex;
   width: 204px;
-  margin-right: 50px;
+  margin-right: 30px;
 
   @media (max-width: $mobile-width) {
     width: 38px;
@@ -77,6 +77,7 @@
 .header__feedback {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 180px;
   margin-top: 4px;
   margin-right: 3px;
