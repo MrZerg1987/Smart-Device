@@ -1,6 +1,18 @@
 .main-content {
   position: relative;
 
+  background-image: url("../img/svg/triangle-group.svg");
+  background-repeat: no-repeat;
+  background-position: 623px -30px;
+
+  @media (max-width: $tablet-width) {
+    background-position: 211px 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-position: -120px 652px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -35,21 +47,4 @@
       display: none;
     }
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: -29px;
-  //   left: 247px;
-
-  //   width: 760px;
-  //   height: 760px;
-
-  //   background-image: url("../img/svg/triangle-group.svg");
-
-  //   @media (max-width: $tablet-width) {
-  //     top: 90px;
-  //     left: 186px;
-  //   }
-  // }
 }
