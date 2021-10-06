@@ -13,7 +13,6 @@
 
 .contacts__list {
   display: grid;
-  width: 100%;
   max-width: 454px;
   margin: 0;
   margin-right: 37px;
@@ -30,6 +29,7 @@
     margin-right: 0;
 
     grid-column-gap: 9px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (max-width: $mobile-width) {

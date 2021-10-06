@@ -8,6 +8,16 @@
   color: $color-dark-blue;
 
   justify-self: flex-end;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+
+    justify-self: flex-start;
+  }
 }
 
 .address__title {
@@ -19,6 +29,11 @@
   font-family: $font-family--roboto-condensed;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 28px;
+    margin-bottom: 31px;
+  }
 }
 
 .address__list {
@@ -34,6 +49,11 @@
   opacity: 0.5;
 
   grid-template-columns: 1fr;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 1px;
+    margin-bottom: 26px;
+  }
 }
 
 .address__link {
