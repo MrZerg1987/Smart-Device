@@ -1,0 +1,145 @@
+.advantages {
+  display: flex;
+  padding-top: 112px;
+  padding-bottom: 55px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 37px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-auto-rows: minmax(300px, auto);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-width) {
+    grid-auto-rows: minmax(230px, auto);
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-row-gap: 21px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  padding: 39px 43px 64px 42px;
+
+  background-color: $color-white;
+  border: 1px solid $color-special-dirty-white;
+  border-left: 3px solid $color-blue;
+
+  &:hover {
+    background-color: $color-blue;
+
+    .advantages__title,
+    .advantages__description,
+    .advantages__svg {
+      color: $color-white;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 23px 19px 20px 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 23px 12px 28px 23px;
+
+    border-left: 2px solid $color-blue;
+
+    &:first-child {
+      padding-right: 13px;
+      padding-bottom: 24px;
+    }
+
+    &:last-child {
+      padding-right: 13px;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.advantages__svg {
+  margin-bottom: 17px;
+
+  color: $color-blue;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.advantages__svg-suppliers {
+  @media (max-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 7px;
+  }
+}
+
+.advantages__svg-detective {
+  @media (max-width: $tablet-width) {
+    width: 30px;
+    height: 29px;
+    margin-bottom: 7px;
+  }
+}
+
+.advantages__svg-tag {
+  @media (max-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 7px;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: $font-family--roboto-condensed;
+  color: $color-blue;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--pt-mono;
+  color: $color-special-dark-grey;
+}
