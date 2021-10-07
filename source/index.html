@@ -97,10 +97,10 @@
           <p class="main-screen__description">
             производство и монтаж, поставка комплектующих, блоков и модулей
           </p>
-          <a class="main-screen__link" href="#"
+          <a class="main-screen__link" href="#feedback"
             >Получить бесплатную консультацию</a
           >
-          <a class="main-screen__link-mobile" href="#"
+          <a class="main-screen__link-mobile" href="#feedback"
             >Бесплатная консультация</a
           >
         </div>
@@ -258,11 +258,68 @@
           </ul>
         </div>
       </section>
+      <section class="feedback" id="feedback">
+        <div class="container">
+          <div class="feedback__main-block">
+            <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+            <p class="feedback__description">
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <div class="form">
+              <form method="GET">
+                <div class="form__input-block">
+                  <label
+                    ><input type="text" name="name" placeholder="Имя"
+                  /></label>
+                  <label
+                    ><input type="text" name="phone" placeholder="Телефон"
+                  /></label>
+                </div>
+                <label>
+                  <textarea name="text" placeholder="Ваш вопрос"></textarea>
+                </label>
+                <div class="form__last-block">
+                  <div class="form__checkbox-block">
+                    <input
+                      class="visually-hidden"
+                      id="form__permission"
+                      type="checkbox"
+                      name="permission"
+                      value="agree"
+                      checked
+                    />
+                    <label for="form__permission" tabindex="0"
+                      >Я согласен на обработку персональных данных</label
+                    >
+                  </div>
+                  <button class="form__button-submit" type="submit">
+                    Задать вопрос
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__picture">
+          <picture>
+            <!-- 1х: 511px; 2x: 1022px -->
+            <img
+              src="img/content/paper-airplane-@1x.png"
+              srcset="
+                img/content/paper-airplane-@1x.png 1x,
+                img/content/paper-airplane-@2x.png 2x
+              "
+              alt="Картинка с бумажным самолётиком"
+              width="511"
+              height="288"
+          /></picture>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
         <section class="brief">
-          <h2 class="visually-hidden">Коротко о нашей компании</h2>
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <div class="brief__logo-wrapper">
             <span class="brief__logo"
               ><img
@@ -272,7 +329,7 @@
                 height="52"
             /></span>
             <div class="brief__slogan">
-              <h2 class="brief__slogan-title">Service Device</h2>
+              <h3 class="brief__slogan-title">Service Device</h3>
               <span class="brief__slogan-description">умные технологии</span>
             </div>
           </div>

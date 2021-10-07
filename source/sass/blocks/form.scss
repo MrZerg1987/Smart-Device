@@ -1,0 +1,169 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-block {
+  display: grid;
+  width: 100%;
+  max-width: 570px;
+  margin-bottom: 40px;
+
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+
+    grid-column-gap: 33px;
+  }
+}
+
+.form input {
+  width: 100%;
+  max-width: 270px;
+  padding: 14px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--pt-mono;
+  color: $color-white;
+
+  background-color: rgba($color-white, 0.1);
+  border: none;
+
+  &:hover {
+    outline: 1px solid $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-white;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+  }
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 154px;
+  margin-bottom: 42px;
+  padding: 14px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--pt-mono;
+  color: $color-white;
+
+  background-color: rgba($color-white, 0.1);
+  border: none;
+
+  resize: none;
+
+  &:hover {
+    outline: 1px solid $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-white;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+  }
+}
+
+.form__last-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  label {
+    position: relative;
+
+    max-width: 230px;
+    margin-left: 20px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+
+    opacity: 0.8;
+  }
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: -32px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid $color-white;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  left: -29px;
+
+  width: 9px;
+  height: 6px;
+
+  background-image: url("../../img/svg/check-mark.svg");
+}
+
+.form__checkbox-block {
+  display: flex;
+  order: 2;
+  width: 100%;
+  max-width: 270px;
+  padding-top: 6px;
+  padding-left: 11px;
+}
+
+.form__button-submit {
+  order: 1;
+  width: 100%;
+  max-width: 270px;
+  margin-right: 38px;
+  margin-left: -2px;
+  padding: 12px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-family--roboto-condensed;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $color-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
