@@ -67,7 +67,7 @@
                 href="mailto:info@sd.ru"
                 aria-label="Открыть электронную почту"
               >
-                <svg width="19" height="14">
+                <svg class="contacts__svg" width="19" height="14">
                   <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
                 </svg>
                 <span class="contacts__span">info@sd.ru</span>
@@ -79,7 +79,7 @@
                 href="tel:+74950005252"
                 aria-label="Позвонить в компанию Smart Device"
               >
-                <svg width="18" height="18">
+                <svg class="contacts__svg" width="18" height="18">
                   <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                 </svg>
                 <span class="contacts__span">+7 (495) 000 52 52</span>
@@ -269,10 +269,14 @@
               <form method="GET">
                 <div class="form__input-block">
                   <label
-                    ><input type="text" name="name" placeholder="Имя"
+                    ><input type="text" name="name" placeholder="Имя" required
                   /></label>
                   <label
-                    ><input type="text" name="phone" placeholder="Телефон"
+                    ><input
+                      type="text"
+                      name="phone"
+                      placeholder="Телефон"
+                      required
                   /></label>
                 </div>
                 <label>
