@@ -7,7 +7,11 @@
   background-color: $color-dark-blue;
 
   @media (max-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 51px;
+    padding-bottom: 78px;
+  }
+
+  @media (max-width: $mobile-width) {
     padding-bottom: 65px;
   }
 }
@@ -27,6 +31,7 @@
   @media (max-width: $tablet-width) {
     max-width: 613px;
     margin-right: 0;
+    margin-bottom: 48px;
 
     font-size: 32px;
     line-height: 45px;
@@ -34,7 +39,7 @@
 
   @media (max-width: $mobile-width) {
     max-width: 100%;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     margin-left: 8px;
 
     font-size: 28px;
@@ -114,11 +119,11 @@
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    padding: 40px 44px 156px 44px;
+    padding: 41px 44px 156px 44px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 21px 33px 175px 33px;
+    padding: 21px 33px 176px 33px;
   }
 
   &:hover {

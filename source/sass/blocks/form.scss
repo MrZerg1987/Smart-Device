@@ -1,6 +1,15 @@
 .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .form__input-block {
@@ -14,14 +23,22 @@
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
+    margin-bottom: 44px;
 
     grid-column-gap: 33px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 32px;
+
+    grid-row-gap: 31px;
+    grid-template-columns: 1fr;
+  }
 }
 
-.form input {
+.form input[type="text"] {
   width: 100%;
-  max-width: 270px;
+  max-width: 278px;
   padding: 14px;
 
   font-weight: 400;
@@ -32,6 +49,15 @@
 
   background-color: rgba($color-white, 0.1);
   border: none;
+
+  @media (max-width: $tablet-width) {
+    padding: 12px 15px 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    padding: 12px 15px 17px;
+  }
 
   &:hover {
     outline: 1px solid $color-white;
@@ -67,6 +93,16 @@
 
   resize: none;
 
+  @media (max-width: $tablet-width) {
+    min-height: 158px;
+    padding: 11px 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 104px;
+    margin-bottom: 25px;
+  }
+
   &:hover {
     outline: 1px solid $color-white;
   }
@@ -85,9 +121,17 @@
 }
 
 .form__last-block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   width: 100%;
+  margin-left: 2px;
+
+  grid-column-gap: 38px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $mobile-width) {
+    grid-row-gap: 31px;
+    grid-template-columns: 1fr;
+  }
 
   label {
     position: relative;
@@ -105,7 +149,7 @@
   }
 }
 
-input[type="checkbox"] + label::before {
+.form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   bottom: 18px;
@@ -115,9 +159,21 @@ input[type="checkbox"] + label::before {
   height: 16px;
 
   border: 1px solid $color-white;
+
+  @media (max-width: $tablet-width) {
+    bottom: 21px;
+    left: -34px;
+
+    width: 17px;
+    height: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 16px;
+  }
 }
 
-input[type="checkbox"]:checked + label::after {
+.form input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   bottom: 23px;
@@ -127,6 +183,15 @@ input[type="checkbox"]:checked + label::after {
   height: 6px;
 
   background-image: url("../../img/svg/check-mark.svg");
+
+  @media (max-width: $tablet-width) {
+    bottom: 26px;
+    left: -30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 21px;
+  }
 }
 
 .form__checkbox-block {
@@ -136,13 +201,22 @@ input[type="checkbox"]:checked + label::after {
   max-width: 270px;
   padding-top: 6px;
   padding-left: 11px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 9px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    padding-left: 11px;
+  }
 }
 
 .form__button-submit {
   order: 1;
   width: 100%;
   max-width: 270px;
-  margin-right: 38px;
   margin-left: -2px;
   padding: 12px;
 
@@ -159,8 +233,17 @@ input[type="checkbox"]:checked + label::after {
   border-radius: 5px;
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    max-width: 276px;
+    padding: 14px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+  }
+
   &:hover {
-    border: 2px solid $color-white;
+    box-shadow: 0 0 1px 1px $color-white;
   }
 
   &:active {

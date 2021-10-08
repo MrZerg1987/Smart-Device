@@ -13,6 +13,16 @@
   grid-column-gap: 13px;
   grid-row-gap: 13px;
   grid-template-columns: repeat(3, 28px);
+
+  @media (max-width: $tablet-width) {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
 }
 
 .social__link {

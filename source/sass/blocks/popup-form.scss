@@ -1,0 +1,160 @@
+.popup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form__input-block {
+  display: grid;
+  width: 100%;
+  margin-bottom: 31px;
+
+  grid-row-gap: 31px;
+  grid-template-columns: 1fr;
+}
+
+.popup-form [type="text"] {
+  width: 100%;
+  padding: 15px 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--pt-mono;
+  color: $color-white;
+
+  background-color: rgba($color-white, 0.1);
+  border: none;
+
+  &:hover {
+    outline: 1px solid $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-white;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+  }
+}
+
+.popup-form textarea {
+  width: 100%;
+  min-height: 104px;
+  margin-bottom: 27px;
+  padding: 14px 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--pt-mono;
+  color: $color-white;
+
+  background-color: rgba($color-white, 0.1);
+  border: none;
+
+  resize: none;
+
+  &:hover {
+    outline: 1px solid $color-white;
+  }
+
+  &:focus {
+    outline: 2px solid $color-white;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+  }
+}
+
+.popup-form__last-block {
+  display: grid;
+  width: 100%;
+
+  grid-row-gap: 31px;
+  grid-template-columns: 1fr;
+
+  label {
+    position: relative;
+
+    width: 100%;
+    margin-left: 49px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $font-family--pt-mono;
+    color: $color-white;
+
+    opacity: 0.8;
+  }
+}
+
+.popup-form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  left: -48px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid $color-white;
+}
+
+.popup-form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  bottom: 21px;
+  left: -45px;
+
+  width: 9px;
+  height: 6px;
+
+  background-image: url("../../img/svg/check-mark.svg");
+}
+
+.popup-form__checkbox-block {
+  display: flex;
+  order: 2;
+  width: 100%;
+  max-width: 355px;
+  padding-top: 6px;
+}
+
+.popup-form__button-submit {
+  order: 1;
+  width: 100%;
+  margin-left: -1px;
+  padding: 13px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-family--roboto-condensed;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 1px 1px $color-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -8,7 +8,7 @@
   padding-left: 180px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 28px;
+    padding-top: 25px;
     padding-bottom: 82px;
     padding-left: 185px;
   }
@@ -79,7 +79,7 @@
   color: $color-special-dark-grey;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     font-size: 32px;
     line-height: 45px;
@@ -106,12 +106,12 @@
   color: $color-special-dark-grey;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     margin-left: 3px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 }
 
@@ -148,7 +148,7 @@
   border-radius: 5px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 21px;
+    margin-top: 22px;
     margin-left: 3px;
   }
 
@@ -157,7 +157,7 @@
   }
 
   &:hover {
-    opacity: 0.7;
+    box-shadow: 0 0 1px 1px $color-blue;
   }
 
   &:active {
