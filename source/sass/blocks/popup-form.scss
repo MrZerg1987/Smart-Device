@@ -12,7 +12,8 @@
   grid-template-columns: 1fr;
 }
 
-.popup-form [type="text"] {
+.popup-form input[type="text"],
+.popup-form input[type="tel"] {
   width: 100%;
   padding: 15px 24px;
 
@@ -95,6 +96,7 @@
     font-family: $font-family--pt-mono;
     color: $color-white;
 
+    cursor: pointer;
     opacity: 0.8;
   }
 }
@@ -156,5 +158,12 @@
 
   &:active {
     opacity: 0.8;
+  }
+
+  &:disabled {
+    color: rgba($color-white, 0.7);
+
+    box-shadow: none;
+    opacity: 1;
   }
 }

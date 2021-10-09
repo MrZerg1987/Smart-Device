@@ -78,7 +78,6 @@
 .header__feedback {
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
   width: 180px;
   margin-top: 4px;
@@ -89,6 +88,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 

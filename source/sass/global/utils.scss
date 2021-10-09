@@ -9,13 +9,10 @@
 }
 
 .scroll-lock {
-  position: fixed;
-
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
-.scroll-unlock {
-  position: relative;
-
-  overflow: auto;
+.check-input {
+  border-color: $color-red;
+  box-shadow: 0 0 2px 2px $color-red;
 }
