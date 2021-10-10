@@ -128,6 +128,7 @@
 
   grid-column-gap: 38px;
   grid-template-columns: 1fr 1fr;
+  color: $color-white;
 
   @media (max-width: $mobile-width) {
     grid-row-gap: 31px;
@@ -144,10 +145,13 @@
     font-size: 14px;
     line-height: 16px;
     font-family: $font-family--pt-mono;
-    color: $color-white;
 
     cursor: pointer;
     opacity: 0.8;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -14,10 +14,18 @@
   }
 
   @media (max-width: $mobile-width) {
+    position: relative;
+
+    width: 100%;
+    max-width: 100%;
     margin-right: 0;
 
     justify-self: flex-start;
   }
+}
+
+.address__button {
+  display: none;
 }
 
 .address__title {
@@ -37,7 +45,6 @@
 }
 
 .address__list {
-  display: grid;
   margin: 0;
   padding: 0;
 

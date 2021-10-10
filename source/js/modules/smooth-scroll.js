@@ -4,7 +4,7 @@ const move = new window.MoveTo({
 });
 
 export const initSmoothScroll = () => {
-  const smoothLinks = document.querySelectorAll('.main-nav__link');
+  const smoothLinks = document.querySelectorAll('.main-screen__link');
   if (smoothLinks.length) {
     smoothLinks.forEach((link) => {
       move.registerTrigger(link);

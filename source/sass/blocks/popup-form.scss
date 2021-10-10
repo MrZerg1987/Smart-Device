@@ -83,6 +83,7 @@
 
   grid-row-gap: 31px;
   grid-template-columns: 1fr;
+  color: $color-white;
 
   label {
     position: relative;
@@ -94,10 +95,13 @@
     font-size: 14px;
     line-height: 16px;
     font-family: $font-family--pt-mono;
-    color: $color-white;
 
     cursor: pointer;
     opacity: 0.8;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

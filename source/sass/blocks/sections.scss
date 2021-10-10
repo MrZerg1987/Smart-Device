@@ -17,6 +17,8 @@
   @media (max-width: $mobile-width) {
     position: relative;
 
+    width: 100%;
+
     &::after {
       content: "";
       position: absolute;
@@ -29,6 +31,10 @@
       background-color: rgba($color-dark-grey, 0.2);
     }
   }
+}
+
+.sections__button {
+  display: none;
 }
 
 .sections__title {
@@ -49,7 +55,6 @@
 }
 
 .sections__list {
-  display: grid;
   margin: 0;
   padding: 0;
 
@@ -80,6 +85,10 @@
   max-width: 234px;
 
   justify-self: flex-end;
+
+  @media (max-width: $mobile-width) {
+    justify-self: flex-start;
+  }
 }
 
 .sections__link {

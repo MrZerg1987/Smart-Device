@@ -4,7 +4,7 @@
   left: 50%;
   z-index: 21;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 490px;
   padding: 28px 39px 39px;
@@ -46,6 +46,14 @@
   background-position: center;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: inset 0 0 10px 10px rgba($color-white, 0.2);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 10px 10px rgba($color-white, 0.4);
+  }
 }
 
 .popup__title {

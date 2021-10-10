@@ -1,3 +1,11 @@
-import {initJs} from './modules/init-js.js';
+import {initSmoothScroll} from './modules/smooth-scroll';
+import {initPhoneMask} from './modules/phone-mask';
+import {initValidateForms} from './modules/validate-form';
+import {initPopup} from './modules/popup';
+import {initAccordion} from './modules/accordion';
 
-initJs();
+initSmoothScroll();
+initPhoneMask();
+initValidateForms();
+initPopup();
+initAccordion();
