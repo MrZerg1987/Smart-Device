@@ -448,6 +448,10 @@ template {
   display: grid;
 }
 
+.button-toggle {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1230px;
@@ -601,10 +605,6 @@ img {
   font-weight: 400;
   color: #1b2d37;
   justify-self: flex-end;
-}
-
-.address__button {
-  display: none;
 }
 
 .address__title {
@@ -1832,10 +1832,6 @@ img {
   font-weight: 400;
   color: #1b2d37;
   justify-self: center;
-}
-
-.sections__button {
-  display: none;
 }
 
 .sections__title {

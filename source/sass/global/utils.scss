@@ -37,6 +37,10 @@
   }
 }
 
+.button-toggle {
+  display: none;
+}
+
 .button-open {
   @media (max-width: $mobile-width) {
     position: absolute;

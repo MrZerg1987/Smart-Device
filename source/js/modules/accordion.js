@@ -5,8 +5,8 @@ const buttons = footerInfoBlock.querySelectorAll('button');
 
 const hideLists = () => {
   buttons.forEach((button) => {
-    if (button.classList.contains('sections__button' || 'button-close')) {
-      button.classList.remove('button' && 'button-close');
+    if (button.classList.contains('button-toggle' || 'button-close')) {
+      button.classList.remove('button-toggle' && 'button-close');
       button.classList.add('button-open');
     }
   });
