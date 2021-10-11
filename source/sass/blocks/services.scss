@@ -18,7 +18,7 @@
 
 .services__title {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   padding: 0;
 
   font-weight: 400;
@@ -67,49 +67,12 @@
   }
 }
 
-.services__item {
+.services__link {
   position: relative;
 
-  background-image: url("../img/content/products-2-desktop.png");
-  background-size: cover;
-
-  @media (max-width: $tablet-width) {
-    background-image: url("../img/content/products-2-tablet.png");
-  }
-
-  @media (max-width: $mobile-width) {
-    background-image: url("../img/content/products-2-mobile.png");
-  }
-
-  &:first-child {
-    background-image: url("../img/content/products-1-desktop.png");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/content/products-1-tablet.png");
-    }
-
-    @media (max-width: $mobile-width) {
-      background-image: url("../img/content/products-1-mobile.png");
-    }
-  }
-
-  &:last-child {
-    background-image: url("../img/content/products-3-desktop.png");
-
-    @media (max-width: $tablet-width) {
-      background-image: url("../img/content/products-3-tablet.png");
-    }
-
-    @media (max-width: $mobile-width) {
-      background-image: url("../img/content/products-3-mobile.png");
-    }
-  }
-}
-
-.services__link {
   display: flex;
   width: 100%;
-  min-height: 622px;
+  min-height: 623px;
   padding: 53px 44px;
 
   font-weight: 400;
@@ -134,21 +97,52 @@
   }
 
   span {
+    z-index: 1;
+
     display: flex;
     max-width: 173px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    width: 63px;
+    height: 63px;
+
+    background-color: $color-blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    bottom: 25px;
+    z-index: 1;
+
+    width: 6px;
+    height: 10px;
+
+    background-image: url("../../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
 
-.services__svg-wrapper {
+.services__link-picture {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 0;
+  left: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 63px;
-  height: 63px;
+  width: 100%;
+  height: 100%;
 
-  background-color: $color-blue;
+  opacity: 0.2;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }

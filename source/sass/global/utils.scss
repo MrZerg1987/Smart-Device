@@ -13,64 +13,15 @@
 }
 
 .check-input {
-  border-color: $color-red;
   box-shadow: 0 0 2px 2px $color-red;
-}
-
-.scroll-unlock {
-  position: relative;
-
-  overflow: scroll;
+  
+  & + label {
+    color: $color-red;
+    text-decoration: underline;
+    text-shadow: 0 0 2px $color-red;
+  }
 }
 
 .check-label {
-  color: $color-red;
-}
-
-.show {
-  display: grid;
-}
-
-.hidden {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-}
-
-.button-toggle {
-  display: none;
-}
-
-.button-open {
-  @media (max-width: $mobile-width) {
-    position: absolute;
-    top: 29px;
-    right: 17px;
-
-    display: flex;
-    width: 16px;
-    height: 16px;
-
-    background-color: transparent;
-    background-image: url("../img/svg/plus.svg");
-    border: none;
-    cursor: pointer;
-  }
-}
-
-.button-close {
-  @media (max-width: $mobile-width) {
-    position: absolute;
-    top: 36px;
-    right: 17px;
-
-    display: flex;
-    width: 16px;
-    height: 1px;
-
-    background-color: transparent;
-    background-image: url("../img/svg/minus.svg");
-    border: none;
-    cursor: pointer;
-  }
+  color: $color-dark-blue;
 }

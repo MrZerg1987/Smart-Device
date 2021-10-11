@@ -81,9 +81,10 @@
   display: grid;
   width: 100%;
 
+  color: $color-white;
+
   grid-row-gap: 31px;
   grid-template-columns: 1fr;
-  color: $color-white;
 
   label {
     position: relative;

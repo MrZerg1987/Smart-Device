@@ -10,7 +10,7 @@
   color: $color-white;
 
   @media (max-width: $tablet-width) {
-    padding: 117px 88px 163px;
+    padding: 117px 88px 167px;
     overflow-x: hidden;
   }
 
@@ -47,6 +47,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 75%;
+    margin-bottom: 29px;
 
     font-size: 60px;
     line-height: 70px;
@@ -100,7 +101,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 75%;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
     margin-left: 51px;
 
     font-size: 18px;
@@ -131,6 +132,7 @@
     right: -207px;
 
     width: 465px;
+    height: 340px;
     margin-right: 0;
   }
 
@@ -139,6 +141,7 @@
     right: 0;
 
     width: 295px;
+    height: 220px;
   }
 }
 

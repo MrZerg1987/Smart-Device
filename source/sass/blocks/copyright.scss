@@ -79,8 +79,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 100%;
     justify-content: center;
+    max-width: 100%;
 
     &:first-child {
       margin-right: 0;
@@ -99,11 +99,11 @@
 
   text-align: center;
 
-  :hover {
+  &:hover {
     color: $color-blue;
   }
 
-  :active {
+  &:active {
     opacity: 0.7;
   }
 

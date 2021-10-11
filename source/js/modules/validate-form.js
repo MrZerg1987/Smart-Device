@@ -11,7 +11,7 @@ const removeError = (form) => {
   });
 };
 
-const checkInputsValidity = (inputs) => {
+const checkInputsNameValidity = (inputs) => {
   let flag = true;
   inputs.forEach((input) => {
     if (!input.value) {
@@ -24,22 +24,56 @@ const checkInputsValidity = (inputs) => {
   return flag;
 };
 
+const checkInputsPhoneValidity = (inputs) => {
+  let flag = true;
+  inputs.forEach((input) => {
+    if (input.value.length < 18) {
+      input.classList.add('check-input');
+      flag = false;
+      return;
+    }
+    input.classList.remove('check-input');
+  });
+  return flag;
+};
+
+const checkInputsCheckboxValidity = (inputs) => {
+  let flag = true;
+  inputs.forEach((input) => {
+    if (!input.checked) {
+      input.classList.add('check-input');
+      flag = false;
+      return;
+    }
+    input.classList.remove('check-input');
+  });
+  return flag;
+};
+
 const addLocalStorage = () => {
-  userNames.forEach((userName) => {
-    localStorage.setItem('name', userName.value);
-  });
-  userPhones.forEach((userPhone) => {
-    localStorage.setItem('phone', userPhone.value);
-  });
-  userQuestions.forEach((userQuestion) => {
-    localStorage.setItem('text', userQuestion.value);
-  });
+  if (userNames) {
+    userNames.forEach((userName) => {
+      localStorage.setItem('name', userName.value);
+    });
+  }
+  if (userPhones) {
+    userPhones.forEach((userPhone) => {
+      localStorage.setItem('phone', userPhone.value);
+    });
+  }
+  if (userQuestions) {
+    userQuestions.forEach((userQuestion) => {
+      localStorage.setItem('text', userQuestion.value);
+    });
+  }
 };
 
 const onFormSubmit = (evt) => {
   evt.preventDefault();
-  const inputs = evt.target.querySelectorAll('input');
-  if (checkInputsValidity(inputs)) {
+  const inputsName = evt.target.querySelectorAll('[name=name]');
+  const inputsPhone = evt.target.querySelectorAll('[name=phone]');
+  const inputsCheckbox = evt.target.querySelectorAll('[name=permission]');
+  if (checkInputsNameValidity(inputsName) && checkInputsPhoneValidity(inputsPhone) && checkInputsCheckboxValidity(inputsCheckbox)) {
     removeError(evt.target);
     addLocalStorage();
     setTimeout(() => {
