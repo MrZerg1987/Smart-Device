@@ -11,17 +11,3 @@
 .scroll-lock {
   overflow: hidden;
 }
-
-.check-input {
-  box-shadow: 0 0 2px 2px $color-red;
-  
-  & + label {
-    color: $color-red;
-    text-decoration: underline;
-    text-shadow: 0 0 2px $color-red;
-  }
-}
-
-.check-label {
-  color: $color-dark-blue;
-}

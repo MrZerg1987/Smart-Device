@@ -189,7 +189,7 @@
   width: 9px;
   height: 6px;
 
-  background-image: url("../../img/svg/check-mark.svg");
+  background-image: url("../img/svg/check-mark.svg");
 
   @media (max-width: $tablet-width) {
     bottom: 26px;
@@ -253,7 +253,22 @@
     box-shadow: 0 0 1px 1px $color-white;
   }
 
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px $color-white;
+  }
+
   &:active {
     opacity: 0.8;
+  }
+}
+
+.check-input {
+  box-shadow: 0 0 2px 2px $color-red;
+
+  & + label {
+    color: $color-red;
+    text-decoration: underline;
+    text-shadow: 0 0 2px $color-red;
   }
 }

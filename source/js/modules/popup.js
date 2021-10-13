@@ -6,6 +6,7 @@ const popup = document.querySelector('.popup');
 const buttonClose = document.querySelector('.popup__button-close');
 const userName = popup.querySelector('[name=name]');
 const userPhone = popup.querySelector('[name=phone]');
+const userQuestion = popup.querySelector('[name=permission]');
 
 let storage = localStorage.getItem('name');
 
@@ -15,16 +16,17 @@ const onButtonFeedbackClick = () => {
   }
   document.body.classList.add('scroll-lock');
 
-  if (storage) {
-    userName.value = storage;
-    userPhone.focus();
-    return;
+  if (userName || userPhone || userQuestion) {
+    if (storage) {
+      userName.value = storage;
+    } else if (storage) {
+      userPhone.value = storage;
+      userQuestion.focus();
+    } else {
+      userPhone.focus();
+    }
+    userName.focus();
   }
-  userName.focus();
-};
-
-const openPopup = () => {
-  buttonFeedback.addEventListener('click', onButtonFeedbackClick);
 };
 
 export const hidePopup = () => {
@@ -51,13 +53,9 @@ const onOverlayClick = (evt) => {
   }
 };
 
-const closePopup = () => {
+export const initPopup = () => {
+  buttonFeedback.addEventListener('click', onButtonFeedbackClick);
   buttonClose.addEventListener('click', onButtonCloseClick);
   document.addEventListener('keydown', onKeyEscKeydown);
   overlay.addEventListener('click', onOverlayClick);
-};
-
-export const initPopup = () => {
-  openPopup();
-  closePopup();
 };

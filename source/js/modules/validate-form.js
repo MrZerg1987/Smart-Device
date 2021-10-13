@@ -73,7 +73,14 @@ const onFormSubmit = (evt) => {
   const inputsName = evt.target.querySelectorAll('[name=name]');
   const inputsPhone = evt.target.querySelectorAll('[name=phone]');
   const inputsCheckbox = evt.target.querySelectorAll('[name=permission]');
-  if (checkInputsNameValidity(inputsName) && checkInputsPhoneValidity(inputsPhone) && checkInputsCheckboxValidity(inputsCheckbox)) {
+
+  const checkInputsValidity = () => {
+    checkInputsNameValidity(inputsName);
+    checkInputsPhoneValidity(inputsPhone);
+    checkInputsCheckboxValidity(inputsCheckbox);
+  };
+
+  if (checkInputsValidity()) {
     removeError(evt.target);
     addLocalStorage();
     setTimeout(() => {

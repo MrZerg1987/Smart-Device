@@ -151,7 +151,12 @@
   }
 
   &:hover {
-    box-shadow: 0 0 1px 1px $color-blue;
+    box-shadow: 0 0 2px 2px $color-blue;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px $color-blue;
   }
 
   &:active {

@@ -96,6 +96,13 @@
     box-shadow: inset 0 0 2px 2px $color-blue;
   }
 
+  &:focus {
+    color: $color-blue;
+
+    outline: none;
+    box-shadow: inset 0 0 2px 2px $color-blue;
+  }
+
   span {
     z-index: 1;
 
@@ -103,7 +110,7 @@
     max-width: 173px;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     right: 0;
@@ -114,20 +121,9 @@
     height: 63px;
 
     background-color: $color-blue;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 28px;
-    bottom: 25px;
-    z-index: 1;
-
-    width: 6px;
-    height: 10px;
-
-    background-image: url("../../img/svg/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

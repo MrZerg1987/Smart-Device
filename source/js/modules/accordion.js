@@ -30,10 +30,6 @@ const onButtonSectionsClick = () => {
   }
 };
 
-const openListSections = () => {
-  buttonSections.addEventListener('click', onButtonSectionsClick);
-};
-
 const onButtonAddressClick = () => {
   hideLists();
   if (buttonAddress.classList.contains('address__button--open')) {
@@ -43,12 +39,8 @@ const onButtonAddressClick = () => {
   }
 };
 
-const openListAddress = () => {
-  buttonAddress.addEventListener('click', onButtonAddressClick);
-};
-
 export const initAccordion = () => {
   hideLists();
-  openListSections();
-  openListAddress();
+  buttonSections.addEventListener('click', onButtonSectionsClick);
+  buttonAddress.addEventListener('click', onButtonAddressClick);
 };

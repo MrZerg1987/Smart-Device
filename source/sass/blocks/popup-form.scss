@@ -127,7 +127,7 @@
   width: 9px;
   height: 6px;
 
-  background-image: url("../../img/svg/check-mark.svg");
+  background-image: url("../img/svg/check-mark.svg");
 }
 
 .popup-form__checkbox-block {
@@ -158,7 +158,12 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 1px 1px $color-white;
+    box-shadow: 0 0 2px 2px $color-white;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px $color-white;
   }
 
   &:active {
