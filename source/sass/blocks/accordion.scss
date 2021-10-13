@@ -1,0 +1,57 @@
+.accordion {
+  position: relative;
+}
+
+.accordion--plus {
+  &::after {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+
+      display: flex;
+      width: 16px;
+      height: 16px;
+
+      background-color: transparent;
+      background-image: url("../img/svg/plus.svg");
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.accordion--minus {
+  &::after {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+
+      display: flex;
+      width: 16px;
+      height: 1px;
+
+      background-color: transparent;
+      background-image: url("../img/svg/minus.svg");
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.accordion-item {
+  display: grid;
+}
+
+.accordion-item--hidden {
+  display: none;
+}

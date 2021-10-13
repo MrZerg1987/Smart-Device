@@ -75,9 +75,11 @@ const onFormSubmit = (evt) => {
   const inputsCheckbox = evt.target.querySelectorAll('[name=permission]');
 
   const checkInputsValidity = () => {
-    checkInputsNameValidity(inputsName);
-    checkInputsPhoneValidity(inputsPhone);
-    checkInputsCheckboxValidity(inputsCheckbox);
+    let flag = true;
+    if (!checkInputsNameValidity(inputsName) || !checkInputsPhoneValidity(inputsPhone) || !checkInputsCheckboxValidity(inputsCheckbox)) {
+      flag = false;
+    }
+    return flag;
   };
 
   if (checkInputsValidity()) {

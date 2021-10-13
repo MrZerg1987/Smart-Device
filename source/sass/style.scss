@@ -10,13 +10,14 @@
 @import "global/fonts.scss";
 @import "global/utils.scss";
 @import "global/container.scss";
-@import "global/page-body.scss";
+@import "global/page-wrapper.scss";
 @import "global/reboot.scss";
 
 // Blocks
 //---------------------------------
 
 @import "blocks/about";
+@import "blocks/accordion";
 @import "blocks/address";
 @import "blocks/advantages";
 @import "blocks/brief";

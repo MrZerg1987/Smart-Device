@@ -435,10 +435,11 @@ template {
   padding: 0 30px;
 }
 
-.page-body {
+.page-wrapper {
   display: -ms-grid;
   display: grid;
   min-height: 100%;
+  overflow-x: hidden;
   font-style: normal;
   -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
   -ms-grid-rows: min-content 1fr min-content;
@@ -574,6 +575,27 @@ img {
   opacity: 0.5;
 }
 
+.accordion {
+  position: relative;
+}
+
+.accordion--plus::after {
+  display: none;
+}
+
+.accordion--minus::after {
+  display: none;
+}
+
+.accordion-item {
+  display: -ms-grid;
+  display: grid;
+}
+
+.accordion-item--hidden {
+  display: none;
+}
+
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,8 +622,6 @@ img {
 }
 
 .address__list {
-  display: -ms-grid;
-  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -613,29 +633,12 @@ img {
   grid-template-columns: 1fr;
 }
 
-.address__list--close {
-  display: -ms-grid;
-  display: grid;
-}
-
 .address__link:hover {
   color: #00b2ff;
 }
 
 .address__link:active {
   opacity: 0.7;
-}
-
-.address__button {
-  display: none;
-}
-
-.address__button--open {
-  display: none;
-}
-
-.address__button--close {
-  display: none;
 }
 
 .advantages {
@@ -1878,8 +1881,6 @@ img {
 }
 
 .sections__list {
-  display: -ms-grid;
-  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1893,11 +1894,6 @@ img {
   -ms-grid-rows: (min-content)[4];
   grid-template-rows: repeat(4, -webkit-min-content);
   grid-template-rows: repeat(4, min-content);
-}
-
-.sections__list--close {
-  display: -ms-grid;
-  display: grid;
 }
 
 .sections__item {
@@ -1915,18 +1911,6 @@ img {
 
 .sections__link:active {
   opacity: 0.7;
-}
-
-.sections__button {
-  display: none;
-}
-
-.sections__button--open {
-  display: none;
-}
-
-.sections__button--close {
-  display: none;
 }
 
 .services {
@@ -2484,6 +2468,42 @@ img {
     margin-top: -12px;
   }
 
+  .accordion--plus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    background-image: url("../img/svg/plus.svg");
+    border: none;
+    cursor: pointer;
+  }
+
+  .accordion--minus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 1px;
+    background-color: transparent;
+    background-image: url("../img/svg/minus.svg");
+    border: none;
+    cursor: pointer;
+  }
+
   .address {
     position: relative;
     width: 100%;
@@ -2500,40 +2520,6 @@ img {
   .address__list {
     margin-right: 1px;
     margin-bottom: 28px;
-  }
-
-  .address__list--close {
-    display: none;
-  }
-
-  .address__button--open {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    background-image: url("../img/svg/plus.svg");
-    border: none;
-    cursor: pointer;
-  }
-
-  .address__button--close {
-    position: absolute;
-    top: 35px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 16px;
-    height: 1px;
-    background-color: transparent;
-    background-image: url("../img/svg/minus.svg");
-    border: none;
-    cursor: pointer;
   }
 
   .advantages {
@@ -2811,6 +2797,7 @@ img {
   }
 
   .sections__title {
+    max-width: 100%;
     margin-top: 29px;
     margin-bottom: 28px;
   }
@@ -2819,42 +2806,8 @@ img {
     margin-bottom: 26px;
   }
 
-  .sections__list--close {
-    display: none;
-  }
-
   .sections__item {
     justify-self: flex-start;
-  }
-
-  .sections__button--open {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    background-image: url("../img/svg/plus.svg");
-    border: none;
-    cursor: pointer;
-  }
-
-  .sections__button--close {
-    position: absolute;
-    top: 35px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 16px;
-    height: 1px;
-    background-color: transparent;
-    background-image: url("../img/svg/minus.svg");
-    border: none;
-    cursor: pointer;
   }
 
   .services {
