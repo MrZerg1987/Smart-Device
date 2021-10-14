@@ -201,6 +201,10 @@
   }
 }
 
+.form input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
 .form__checkbox-block {
   display: flex;
   order: 2;

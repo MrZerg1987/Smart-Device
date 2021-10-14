@@ -1199,6 +1199,10 @@ img {
   background-image: url("../img/svg/check-mark.svg");
 }
 
+.form input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
 .form__checkbox-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1655,6 +1659,10 @@ img {
   width: 9px;
   height: 6px;
   background-image: url("../img/svg/check-mark.svg");
+}
+
+.popup-form input[type="checkbox"]:focus + label {
+  text-decoration: underline;
 }
 
 .popup-form__checkbox-block {
