@@ -24,6 +24,12 @@
   grid-row-gap: 10px;
   grid-template-columns: 1fr 1fr;
 
+  @media (max-width: $desktop-light-width) {
+    margin-right: 20px;
+
+    grid-column-gap: 20px;
+  }
+
   @media (max-width: $tablet-width) {
     margin-top: -3px;
     margin-right: 0;
@@ -41,8 +47,13 @@
   display: flex;
   justify-content: flex-end;
   align-self: center;
+  min-width: 224px;
 
   justify-self: flex-end;
+
+  @media (max-width: $tablet-width) {
+    min-width: 24px;
+  }
 }
 
 .contacts__link {

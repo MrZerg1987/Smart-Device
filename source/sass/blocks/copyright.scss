@@ -15,10 +15,18 @@
 
   opacity: 0.5;
 
-  grid-column-gap: 50px;
-  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 40px;
+  grid-template-columns: 2fr 3fr;
+
+  @media (max-width: $desktop-light-width) {
+    font-size: 12px;
+
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (max-width: $tablet-width) {
+    font-size: 13px;
+
     grid-template-columns: 1fr;
   }
 
@@ -72,6 +80,10 @@
 
   &:first-child {
     margin-right: 50px;
+
+    @media (max-width: $desktop-light-width) {
+      margin-right: 20px;
+    }
 
     @media (max-width: $tablet-width) {
       margin-left: 3px;

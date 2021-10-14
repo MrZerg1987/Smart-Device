@@ -47,18 +47,19 @@
           <h1 class="visually-hidden">
             Компания Smart Device - электронные комплектующие для ваших девайсов
           </h1>
-          <div class="header__logo-wrapper">
-            <span class="header__logo"
-              ><img
-                src="img/svg/logo.svg"
+          <div class="header__logo">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="img/svg/logo-mobile.svg"
+              />
+              <img
+                src="img/svg/logo-header.svg"
                 alt="Логотип компании Smart Device"
-                width="52"
+                width="202"
                 height="52"
-            /></span>
-            <div class="header__slogan">
-              <h2 class="header__slogan-title">Smart Device</h2>
-              <span class="header__slogan-description">умные технологии</span>
-            </div>
+              />
+            </picture>
           </div>
           <div class="contacts">
             <ul class="contacts__list">
@@ -88,7 +89,11 @@
               </li>
             </ul>
           </div>
-          <a class="header__feedback" href="#" aria-label="Заказать звонок">
+          <a
+            class="header__link-feedback"
+            href="#"
+            aria-label="Заказать звонок"
+          >
             <span>Заказать звонок</span>
           </a>
         </header>
@@ -184,9 +189,10 @@
                 </svg>
                 <h3 class="advantages__title">Крупные поставщики</h3>
                 <p class="advantages__description">
-                  Нашими поставщиками являются такие крупные мировые компании как:
-                  OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими
-                  компаниями обеспичивает хорошее качество нашей продукции.
+                  Нашими поставщиками являются такие крупные мировые компании
+                  как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с
+                  такими компаниями обеспичивает хорошее качество нашей
+                  продукции.
                 </p>
               </li>
               <li class="advantages__item">
@@ -221,16 +227,17 @@
           <section class="about">
             <h2 class="about__title">О компании</h2>
             <p class="about__description">
-              Мы поставляем электронные комплектующие, производим печатные платы и
-              предоставляем мировые технологии с 1997 года. Выполняем срочные
+              Мы поставляем электронные комплектующие, производим печатные платы
+              и предоставляем мировые технологии с 1997 года. Выполняем срочные
               заказы и пилотные образцы до 10 дней.
             </p>
             <p class="about__description">
               Наши поставщики - мировые производители электронных компонентов:
               OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие
               Service Devices применяются на предприятиях Российских Железных
-              Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-              Среди наших клиентов крупнейшие Производители светотехники России.
+              Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
+              СпецМедТехники. Среди наших клиентов крупнейшие Производители
+              светотехники России.
             </p>
             <a class="about__link" href="#">Подробнее</a>
           </section>
@@ -429,7 +436,11 @@
                 <form method="GET">
                   <div class="form__input-block">
                     <label
-                      ><input type="text" name="name" placeholder="Имя" required
+                      ><input
+                        type="text"
+                        name="name"
+                        placeholder="Имя"
+                        required
                     /></label>
                     <label
                       ><input
@@ -453,7 +464,10 @@
                         checked
                         required
                       />
-                      <label class="checkbox-label" for="form__agree" tabindex="0"
+                      <label
+                        class="checkbox-label"
+                        for="form__agree"
+                        tabindex="0"
                         >Я согласен на обработку персональных данных</label
                       >
                     </div>
@@ -494,18 +508,13 @@
         <div class="footer__wrapper container">
           <section class="brief">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <div class="brief__logo-wrapper">
-              <span class="brief__logo"
-                ><img
-                  src="img/svg/logo.svg"
-                  alt="Логотип компании Smart Device"
-                  width="52"
-                  height="52"
-              /></span>
-              <div class="brief__slogan">
-                <h3 class="brief__slogan-title">Service Device</h3>
-                <span class="brief__slogan-description">умные технологии</span>
-              </div>
+            <div class="brief__logo">
+              <img
+                src="img/svg/logo-footer.svg"
+                alt="Логотип компании Smart Device"
+                width="216"
+                height="52"
+              />
             </div>
             <p class="brief__work-experience">1999-2018 SD Service Devices</p>
             <div class="social">
@@ -546,67 +555,73 @@
               </ul>
             </div>
           </section>
-          <div class="footer__info-block">
-            <section class="sections">
-              <h2 class="sections__title accordion">Разделы сайта</h2>
-              <ul class="sections__list accordion-item">
-                <li class="sections__item">
-                  <a class="sections__link" href="#">О компании</a>
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#">Продукты</a>
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#"
-                    >Производство печатных плат</a
-                  >
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#">Монтаж печатных плат</a>
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#">Комплектующие</a>
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#">Доставка</a>
-                </li>
-                <li class="sections__item">
-                  <a class="sections__link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </section>
-            <section class="address">
-              <h2 class="address__title accordion">Наш офис</h2>
-              <ul class="address__list accordion-item">
-                <li class="address__item">
-                  г. Мытищи, Олимпийский проспект, д.10
-                </li>
-                <li class="address__item">
-                  <a
-                    class="address__link"
-                    href="tel:+74955894050"
-                    aria-label="Позвонить в компанию Smart Device"
-                    >+7 (495) 589-40-50</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a
-                    class="address__link"
-                    href="tel:+79250038767"
-                    aria-label="Позвонить в компанию Smart Device"
-                    >+7 (925) 003-87-67</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a
-                    class="address__link"
-                    href="tel:+792692608079"
-                    aria-label="Позвонить в компанию Smart Device"
-                    >+7 (926) 926-080-79</a
-                  >
-                </li>
-              </ul>
-            </section>
+          <div class="footer__info-block accordion">
+            <div class="sections accordion__item">
+              <button class="accordion__button" type="button">
+                Разделы сайта
+              </button>
+              <div class="accordion__content">
+                <ul class="sections__list">
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">О компании</a>
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">Продукты</a>
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#"
+                      >Производство печатных плат</a
+                    >
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">Доставка</a>
+                  </li>
+                  <li class="sections__item">
+                    <a class="sections__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="address accordion__item">
+              <button class="accordion__button" type="button">Наш офис</button>
+              <div class="accordion__content">
+                <ul class="address__list">
+                  <li class="address__item">
+                    г. Мытищи, Олимпийский проспект, д.10
+                  </li>
+                  <li class="address__item">
+                    <a
+                      class="address__link"
+                      href="tel:+74955894050"
+                      aria-label="Позвонить в компанию Smart Device"
+                      >+7 (495) 589-40-50</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a
+                      class="address__link"
+                      href="tel:+79250038767"
+                      aria-label="Позвонить в компанию Smart Device"
+                      >+7 (925) 003-87-67</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a
+                      class="address__link"
+                      href="tel:+792692608079"
+                      aria-label="Позвонить в компанию Smart Device"
+                      >+7 (926) 926-080-79</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer__copyright-wrapper">
@@ -616,12 +631,16 @@
                 <p class="copyright__description">Все права защищены</p>
               </li>
               <li class="copyright__item">
-                <p class="copyright__description">1999-2018 SD Service Devices</p>
+                <p class="copyright__description">
+                  1999-2018 SD Service Devices
+                </p>
               </li>
             </ul>
             <ul class="copyright__list copyright__second-list">
               <li class="copyright__item">
-                <a class="copyright__link" href="#">Условия конфиденциальности</a>
+                <a class="copyright__link" href="#"
+                  >Условия конфиденциальности</a
+                >
               </li>
               <li class="copyright__item">
                 <a class="copyright__link" href="#">Developed by wow studio</a>

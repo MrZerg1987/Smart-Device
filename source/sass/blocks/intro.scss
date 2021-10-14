@@ -1,9 +1,13 @@
 .intro {
+  position: relative;
+
   width: 100%;
   padding-top: 33px;
 
   background-color: $color-dark-blue;
   background-image: url("../img/content/intro-background-desktop-@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

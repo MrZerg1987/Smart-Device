@@ -100,7 +100,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 75%;
+    max-width: 70%;
     margin-bottom: 54px;
     margin-left: 51px;
 
@@ -122,14 +122,19 @@
 .main-screen__picture {
   position: absolute;
   top: 173px;
-  right: 4px;
+  left: 865px;
 
   width: 705px;
   height: 515px;
 
+  @media (max-width: $desktop-light-width) {
+    left: 740px;
+  }
+
   @media (max-width: $tablet-width) {
     top: 41px;
-    right: -207px;
+    right: -208px;
+    left: auto;
 
     width: 465px;
     height: 340px;
@@ -138,10 +143,12 @@
 
   @media (max-width: $mobile-width) {
     top: 37px;
-    right: 0;
+    right: 45%;
 
-    width: 295px;
+    width: 301px;
     height: 220px;
+
+    transform: translateX(50%);
   }
 }
 

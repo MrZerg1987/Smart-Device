@@ -1,37 +1,31 @@
-const accordions = document.querySelectorAll('.accordion');
-const accordionItems = document.querySelectorAll('.accordion-item');
+const accordion = document.querySelector('.accordion');
+const accordionContents = document.querySelectorAll('.accordion__content');
+const accordionButtons = document.querySelectorAll('.accordion__button');
 
-const hideLists = () => {
-  accordions.forEach((accordion) => {
-    accordionItems.forEach((accordionItem) => {
-      accordion.classList.add('accordion--plus');
-      accordionItem.classList.add('accordion-item--hidden');
-    });
+const initJs = () => {
+  accordionContents.forEach((accordionContent) => {
+    accordionContent.classList.add('is-hidden');
   });
-};
-
-const onAccordionClick = ({target}) => {
-  hideLists();
-  const items = target.querySelectorAll('.accordion-item');
-  items.forEach((item) => {
-    if (target.classList.contains('accordion--plus')) {
-      target.classList.remove('accordion--plus');
-      target.classList.add('accordion--minus');
-      item.classList.remove('accordion-item--hidden');
-      return;
-    }
-    target.classList.remove('accordion--minus');
-    target.classList.add('accordion--plus');
-    item.classList.add('accordion-item--hidden');
+  accordionButtons.forEach((accordionButton) => {
+    accordionButton.classList.add('is-js');
   });
 };
 
 export const initAccordion = () => {
-  if (!accordions && !accordionItems) {
+  if (!accordion) {
     return;
   }
-  hideLists();
-  accordions.forEach((accordion) => {
-    accordion.addEventListener('click', onAccordionClick);
+  initJs();
+  const accordionItems = accordion.querySelectorAll('.accordion__item');
+  accordion.addEventListener('click', (evt) => {
+    if (evt.target.classList.contains('accordion__button')) {
+      const parent = evt.target.closest('.accordion__item');
+      if (parent.classList.contains('is-active')) {
+        parent.classList.remove('is-active');
+        return;
+      }
+      accordionItems.forEach((el) => el.classList.remove('is-active'));
+      parent.classList.add('is-active');
+    }
   });
 };

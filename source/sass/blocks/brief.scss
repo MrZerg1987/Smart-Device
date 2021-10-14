@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
 
     &::after {
       content: "";
@@ -36,7 +36,7 @@
   }
 }
 
-.brief__logo-wrapper {
+.brief__logo {
   display: flex;
   width: 216px;
   margin-bottom: 53px;
@@ -48,40 +48,6 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 25px;
   }
-}
-
-.brief__logo {
-  margin-right: 13px;
-
-  @media (max-width: $mobile-width) {
-    margin-right: 14px;
-  }
-}
-
-.brief__slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 3px;
-  padding-left: 2px;
-}
-
-.brief__slogan-title {
-  margin: 0;
-  margin-bottom: 2px;
-
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  color: $color-special-black;
-}
-
-.brief__slogan-description {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  font-family: $font-family--roboto;
-  color: $color-grey;
 }
 
 .brief__work-experience {

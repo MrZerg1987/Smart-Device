@@ -1,6 +1,6 @@
 import {isEscEvent} from '../utils/utils';
 
-const buttonFeedback = document.querySelector('.header__feedback');
+const buttonFeedback = document.querySelector('.header__link-feedback');
 const overlay = document.querySelector('.popup-overlay');
 const buttonClose = document.querySelector('.popup__button-close');
 const userNames = document.querySelectorAll('[name=name]');

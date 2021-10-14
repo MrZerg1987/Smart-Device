@@ -33,14 +33,13 @@
 .footer__info-block {
   display: grid;
 
-  grid-column-gap: 50px;
-  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 30px;
+  grid-template-columns: 7fr 3fr;
 
   @media (max-width: $tablet-width) {
     padding-top: 38px;
     padding-bottom: 37px;
 
-    grid-column-gap: 30px;
     grid-template-columns: 1fr 1fr;
   }
 
