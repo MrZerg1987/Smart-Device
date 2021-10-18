@@ -1,8 +1,8 @@
 import {isEscEvent} from '../utils/utils';
 
 const buttonFeedback = document.querySelector('.header__link-feedback');
-const overlay = document.querySelector('.popup-overlay');
-const buttonClose = document.querySelector('.popup__button-close');
+const overlayPopup = document.querySelector('.popup-overlay');
+const buttonClosePopup = document.querySelector('.popup__button-close');
 const userNames = document.querySelectorAll('[name=name]');
 const userPhones = document.querySelectorAll('[name=phone]');
 const userQuestions = document.querySelectorAll('[name=permission]');
@@ -10,8 +10,8 @@ const userQuestions = document.querySelectorAll('[name=permission]');
 let storage = localStorage.getItem('name');
 
 const onButtonFeedbackClick = () => {
-  if (!overlay.classList.contains('popup-active')) {
-    overlay.classList.add('popup-active');
+  if (!overlayPopup.classList.contains('popup-active')) {
+    overlayPopup.classList.add('popup-active');
   }
   document.body.classList.add('scroll-lock');
 
@@ -34,8 +34,8 @@ const onButtonFeedbackClick = () => {
 
 
 export const hidePopup = () => {
-  if (overlay.classList.contains('popup-active')) {
-    overlay.classList.remove('popup-active');
+  if (overlayPopup.classList.contains('popup-active')) {
+    overlayPopup.classList.remove('popup-active');
   }
   document.body.classList.remove('scroll-lock');
 };
@@ -55,11 +55,11 @@ const onOverlayClick = (evt) => {
 };
 
 export const initPopup = () => {
-  if (!overlay) {
+  if (!overlayPopup) {
     return;
   }
   buttonFeedback.addEventListener('click', onButtonFeedbackClick);
-  buttonClose.addEventListener('click', onButtonCloseClick);
+  buttonClosePopup.addEventListener('click', onButtonCloseClick);
   document.addEventListener('keydown', onKeyEscKeydown);
-  overlay.addEventListener('click', onOverlayClick);
+  overlayPopup.addEventListener('click', onOverlayClick);
 };

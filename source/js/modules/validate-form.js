@@ -1,4 +1,5 @@
 import {hidePopup} from './popup';
+import {openSuccess} from './success';
 
 const userNames = document.querySelectorAll('[name=name]');
 const userPhones = document.querySelectorAll('[name=phone]');
@@ -88,6 +89,7 @@ const onFormSubmit = (evt) => {
     setTimeout(() => {
       evt.target.reset();
       hidePopup();
+      openSuccess();
     }, 1000);
   }
 };
